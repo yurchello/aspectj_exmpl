@@ -52,4 +52,15 @@ public class LoggingAspect {
 
     }
 
+    @AfterThrowing(
+            pointcut = "execution(* com.yurchello.aspectj.Customer.addCustomerThrowException(..))",
+            throwing= "e")
+    public void logAfterThrowing(JoinPoint joinPoint, Throwable e) {
+
+        System.out.println("logAfterThrowing is running!");
+        System.out.println("hijacked : " + joinPoint.getSignature().getName());
+        System.out.println("Method returned value is : " + e.getMessage());
+        System.out.println("******");
+    }
+
 }
