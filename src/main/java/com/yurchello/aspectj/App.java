@@ -7,6 +7,7 @@ public class App {
     public static void main(String[] args) {
         ApplicationContext appContext = new ClassPathXmlApplicationContext("Spring-Customer.xml");
         Customer customer = (Customer) appContext.getBean("customer");
-        customer.addCustomer();
+        //customer.addCustomer();
+        customer.addCustomerAround("2222");
     }
 }
