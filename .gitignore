@@ -1,0 +1,15 @@
+.repository
+.classpath
+.metadata
+.project
+.settings
+target
+test-output
+.idea
+*.iml
+*.gem
+*.srl
+*.orig
+*.log
+.groovy
+labs
