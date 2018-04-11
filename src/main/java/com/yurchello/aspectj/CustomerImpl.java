@@ -2,8 +2,9 @@ package com.yurchello.aspectj;
 
 public class CustomerImpl implements Customer {
 
-    public void addCustomer(){
+    public String addCustomer(){
         System.out.println("addCustomer() is running ");
+        return "111";
     }
 
     public String addCustomerReturnValue(){

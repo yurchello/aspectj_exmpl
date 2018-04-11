@@ -1,7 +1,7 @@
 package com.yurchello.aspectj;
 
 public interface Customer {
-    void addCustomer();
+    String addCustomer();
 
     String addCustomerReturnValue();
 
